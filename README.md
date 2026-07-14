@@ -1,9 +1,5 @@
 # Jeff Jia — Portfolio
 
-This is my personal portfolio site. I am **Muboyu (Jeff) Jia**, a third-year software engineering student at the University of Waikato in Hamilton, New Zealand. I designed this single-page site to look and feel like a scribbled paper notebook—featuring cream paper, ink-blue headlines, margin-red accents, ruled lines, masking tape, and hard "stacked paper" shadows—to walk visitors through who I am and what I've built.
-
-**This portfolio was built in collaboration with Claude Code.** I acted as the architect and system designer—structuring the codebase, driving the notebook design aesthetic, and engineering the core features—while Claude Code served as an efficient pairing partner to help me scaffold the layout, refine Tailwind utility configurations, and rapidly implement the component structures.
-
 ## What's on the site
 
 *   **Hero** — My name, location, and a typewriter tagline cycling through my roles (software engineering student, software intern at MEA Mobile, CS lab assistant, music tutor), framed as a handwritten "note to self".
