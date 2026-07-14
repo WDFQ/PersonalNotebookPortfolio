@@ -20,9 +20,7 @@ function SkillChips({ skills }: { skills: readonly string[] }) {
       {skills.map((skill, i) => (
         <li
           key={skill}
-          className={`reveal-pop hover-wiggle cursor-default border-2 border-ink px-4 py-1.5 font-bold ${
-            chipStyles[i % chipStyles.length]
-          }`}
+          className="reveal-pop"
           style={
             {
               '--reveal-delay': `${i * 0.06}s`,
@@ -30,7 +28,19 @@ function SkillChips({ skills }: { skills: readonly string[] }) {
             } as CSSProperties
           }
         >
-          {skill}
+          {/*
+            The wiggle lives on an inner span so its hover animation can't
+            clobber the reveal-pop entrance animation on the <li> (both use
+            the CSS `animation` property, and sharing an element made the
+            chip disappear on hover).
+          */}
+          <span
+            className={`hover-wiggle inline-block cursor-default border-2 border-ink px-4 py-1.5 font-bold ${
+              chipStyles[i % chipStyles.length]
+            }`}
+          >
+            {skill}
+          </span>
         </li>
       ))}
     </ul>
