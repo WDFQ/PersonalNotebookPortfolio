@@ -1,29 +1,33 @@
 # Jeff Jia — Portfolio
 
-## What's on the site
+My personal portfolio site, built with React 19 + TypeScript + Vite + Tailwind CSS v4.
 
-*   **Hero** — My name, location, and a typewriter tagline cycling through my roles (software engineering student, software intern at MEA Mobile, CS lab assistant, music tutor), framed as a handwritten "note to self".
-*   **About** — My journey and background: studying on the International Entrance and Vice-Chancellor's International Excellence scholarships, my internship at MEA Mobile building TestPilot, tutoring first-year students in C#, configuring MikroTik routers during a networking summer in Fujian, tutoring music to students aged 5 to 75, and volunteering with WESMO, Waikato's Formula SAE team.
-*   **Skills** — Grouped by the languages I think in (Python, Java, C#, JavaScript, TypeScript, SQL, Bash), my development toolbox (React, Node.js, AWS, MySQL, Unity, VMware, Linux, MCP, Docker, Firebase), and my spoken languages (English, Mandarin Chinese).
-*   **Experience** — A timeline of my five roles: Software Intern at MEA Mobile, CS Lab Assistant at Waikato, Network Intern at Amoy Oriental Prospect Technology, Music Tutor at Waikato Community School of Music, and volunteer club member with WESMO.
-*   **Projects** — A breakdown of four builds I engineered:
+## Tech Stack
 
-| Project | What it does |
-| --- | --- |
-| **RevDex** | A Pokédex-style car-spotting app I built—photograph a vehicle and Gemini Flash identifies its make, model, and year, saving it to a digital garage[cite: 1]. |
-| **TestPilot** | An end-to-end/UI testing MCP server I built at MEA Mobile, using a modular AI-agent approach to cut manual QA effort[cite: 1]. |
-| **Suppsense** | A tool to scan a supplement barcode for its ingredients and get an AI summary grounded in real-time web search, which I built to debunk supplement misinformation[cite: 1]. |
-| **Remote Subnet Connection** | My routing, NAT, and WireGuard tunnels project on MikroTik routers for inter-subnet and remote communication[cite: 1]. |
+- **React 19** — UI library
+- **TypeScript** — type safety across components and logic
+- **Vite** — dev server and build tooling
+- **Tailwind CSS v4** — styling
+- **oxlint** — linting
 
-*   **Contact** — Direct links to my email, phone, LinkedIn, and GitHub[cite: 1].
+Animations throughout the site are designed to respect `prefers-reduced-motion`.
 
-## Under the hood
+## Built with Claude Code
 
-I engineered the application using **React 19 + TypeScript + Vite + Tailwind CSS v4**[cite: 1]. Animations are designed to respect `prefers-reduced-motion`[cite: 1].
+This project was built using [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) as my implementation partner. I drove the architecture, design decisions, content, and direction of the project. Claude Code handled the main heavy lifting of turning my visions into working code. Things like scaffolding components, wiring up Tailwind styling, implementing animations, debugging, and iterating on details as I evolved the design.
+
+In practice this meant:
+
+- I defined what each section/component should do and how it should feel.
+- Claude Code wrote and refactored the React/TypeScript implementation.
+- I reviewed, tested, and steered further iterations.
+
+## Getting Started
 
 ```bash
 npm install
 npm run dev        # dev server with HMR → http://localhost:5173
 npm run build      # type-check + production build into dist/
 npm run preview    # serve the production build locally
-npm run lint       # oxlint
+npm run lint        # oxlint
+```
