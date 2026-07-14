@@ -1,4 +1,4 @@
-import { projects } from '../data/cv'
+import { profile, projects } from '../data/cv'
 import { Reveal } from './Reveal'
 import { SectionHeading } from './SectionHeading'
 import { Tape } from './Tape'
@@ -89,7 +89,7 @@ export function Projects() {
             ✎ screenshots above are placeholder sketches — real ones coming
             soon. More on{' '}
             <a
-              href="https://github.com/WDFQ"
+              href={profile.github}
               target="_blank"
               rel="noreferrer"
               className="squiggle-link font-bold text-navy"

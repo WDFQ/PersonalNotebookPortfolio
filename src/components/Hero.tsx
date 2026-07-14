@@ -136,7 +136,7 @@ export function Hero() {
 
         {/* margin note, like a scribble in a notebook */}
         <div
-          className="reveal relative mt-16 inline-block max-w-xs rotate-[-1.5deg] bg-highlight px-5 py-3 shadow-paper-sm sm:absolute sm:bottom-20 sm:right-8 sm:mt-0"
+          className="reveal relative mt-16 inline-block max-w-xs rotate-[-1.5deg] bg-highlight px-5 py-3 shadow-paper-sm lg:absolute lg:bottom-20 lg:right-8 lg:mt-0"
           style={{ '--reveal-delay': '0.7s', '--final-rot': '-1.5deg' } as CSSProperties}
         >
           <Tape className="-top-3 left-1/2 -translate-x-1/2" rotate={3} />
