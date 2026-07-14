@@ -14,12 +14,12 @@ Animations throughout the site are designed to respect `prefers-reduced-motion`.
 
 ## Built with Claude Code
 
-This project was built using [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) as my implementation partner. I drove the architecture, design decisions, content, and direction of the project. Claude Code handled the main heavy lifting of turning my visions into working code. Things like scaffolding components, wiring up Tailwind styling, implementing animations, debugging, and iterating on details as I evolved the design.
+This project was built using [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) as the implementor. I personally pin-pointed the architecture, design, content, and direction of the project. Claude Code handled the main heavy lifting of turning my visions into working code. Things like scaffolding components, wiring up Tailwind styling, implementing animations, debugging, and iterating on details while I evolve the design.
 
-In practice this meant:
+In practice
 
 - I defined what each section/component should do and how it should feel.
-- Claude Code wrote and refactored the React/TypeScript implementation.
+- Claude Code wrote and refactored the React/TypeScript implementation while I oversaw and made manual minor changes.
 - I reviewed, tested, and steered further iterations.
 
 ## Getting Started
