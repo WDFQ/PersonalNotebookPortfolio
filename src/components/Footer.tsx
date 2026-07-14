@@ -1,4 +1,4 @@
-import { profile } from '../data/cv'
+import { profile } from "../data/cv";
 
 export function Footer() {
   return (
@@ -8,9 +8,10 @@ export function Footer() {
           © {new Date().getFullYear()} {profile.fullName} · Hamilton, NZ
         </p>
         <p className="italic">
-          hand-sketched with React, Tailwind &amp; too much coffee ☕
+          hand-sketched with React, Tailwind &amp; too much Redbull and Claude
+          Code...
         </p>
       </div>
     </footer>
-  )
+  );
 }
