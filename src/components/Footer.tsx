@@ -8,8 +8,7 @@ export function Footer() {
           © {new Date().getFullYear()} {profile.fullName} · Hamilton, NZ
         </p>
         <p className="italic">
-          hand-sketched with React, Tailwind &amp; too much Redbull and Claude
-          Code...
+          Sketched with my hand &amp; orchestrated by Claude Code...
         </p>
       </div>
     </footer>

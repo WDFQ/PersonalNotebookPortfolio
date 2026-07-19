@@ -10,10 +10,10 @@ export const profile = {
   firstName: "Jeff",
   // Cycled by the hero typewriter — all roles are taken verbatim from the CV.
   roles: [
-    "Software Engineering Student",
-    "Software Intern @ MEA Mobile",
-    "CS Lab Assistant",
-    "Music Tutor",
+    "SE Student @ UoW",
+    "Ex Intern @ MEA Mobile",
+    "UoW CS Lab Assistant",
+    "WCSM Music Tutor",
   ],
   location: "Hamilton, New Zealand",
   phone: "027 246 1142",
@@ -23,7 +23,7 @@ export const profile = {
   githubHandle: "WDFQ",
   // Short intro shown in the hero. Wording is original; facts are from the CV.
   tagline:
-    "Third-year software engineering student at the University of Waikato, building AI-powered apps and developer tooling.",
+    "Software engineering student @ the University of Waikato, building fullstack, dev-tools, and self hosting stuff.",
 } as const;
 
 /*
@@ -42,8 +42,8 @@ export const about = {
 export const education = {
   institution: "The University of Waikato",
   location: "Hamilton, New Zealand",
-  degree: "Software Engineering — Third Year",
-  period: "2024 – Present",
+  degree: "Software Engineering",
+  period: "2024 – 2027",
   coursework: [
     "Data Structures & Algorithms",
     "Software Design",
@@ -152,7 +152,7 @@ export interface Project {
   year: string;
   description: string;
   tech: readonly string[];
-  /* Key into the placeholder screenshot map in Projects.tsx. */
+  /* Key into the screenshot map in Projects.tsx. */
   image: "revdex" | "testpilot" | "suppsense" | "subnet";
   imageAlt: string;
 }
@@ -163,21 +163,21 @@ export const projects: readonly Project[] = [
     name: "RevDex",
     year: "Ongoing",
     description:
-      "A Pokedex-inspired car-spotting mobile app: photograph a vehicle and the Gemini Flash API identifies its make, model, and year. Firebase Auth and Firestore power user accounts and a persistent digital garage of spotted cars.",
+      "A Pokedex inspired car spotting mobile app: photograph a vehicle and the Gemini Flash API identifies its make, model, chassis, and year. Firebase Auth and Firestore powers user accounts and persistent digital garage of the spotted cars.",
     tech: ["React Native", "TypeScript", "Expo", "Firebase", "Gemini API"],
     image: "revdex",
     imageAlt:
-      "Placeholder mockup of the RevDex mobile app: a dark camera screen with an orange shutter button and a grid of spotted-car cards.",
+      "RevDex home screen on a phone: a dark interface showing a 12-day spotting streak, the latest spotted car, and a large camera button ready to snap.",
   },
   {
     name: "TestPilot",
     year: "2025",
     description:
-      "An automated end-to-end and UI testing MCP server built during my internship at MEA Mobile. Designed with a modular, AI-agent approach to streamline QA workflows and significantly reduce manual testing effort.",
+      "An automated end-to-end and UI testing MCP server with 15 tools built during my internship at MEA Mobile. Designed with a modular, AI-agent approach to streamline QA workflows and significantly reduce manual testing effort.",
     tech: ["TypeScript", "Node.js", "AWS S3", "MCP", "Claude"],
     image: "testpilot",
     imageAlt:
-      "Placeholder mockup of the TestPilot dashboard: a dark test-runner interface with a sidebar and rows of passing test results.",
+      "TestPilot in action inside a chat interface: browser-automation tool calls navigating a website and clicking a product template, with request and response logs.",
   },
   {
     name: "Suppsense",
@@ -187,7 +187,7 @@ export const projects: readonly Project[] = [
     tech: ["HTML/CSS", "Node.js", "AWS EC2", "MySQL", "ChatGPT API"],
     image: "suppsense",
     imageAlt:
-      "Placeholder mockup of the Suppsense web app: a light interface with a barcode scan panel and an ingredient summary list.",
+      "SuppSense web app showing the ingredient list of a pre-workout supplement, with a verified summary panel explaining Vitamin B6.",
   },
   {
     name: "Remote Subnet Connection",
@@ -197,6 +197,6 @@ export const projects: readonly Project[] = [
     tech: ["RouterOS", "VMware ESXi"],
     image: "subnet",
     imageAlt:
-      "Placeholder mockup of a network topology diagram: router nodes connected by tunnel links on a dark background.",
+      "Networking lab bench: a Brocade switch and routers wired together with a tangle of fibre and ethernet patch cables.",
   },
 ] as const;

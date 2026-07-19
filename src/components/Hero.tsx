@@ -3,6 +3,9 @@ import { profile } from "../data/cv";
 import { useTypewriter } from "../hooks/useTypewriter";
 import { useInView } from "../hooks/useInView";
 import { Tape } from "./Tape";
+import carSketch from "../assets/placeholders/car_sketch.png";
+/* Downscaled web copy of profile_photo.png (the original is 4.7 MB). */
+import profilePhoto from "../assets/placeholders/profile_photo_web.jpg";
 
 export function Hero() {
   const typed = useTypewriter(profile.roles);
@@ -23,21 +26,13 @@ export function Hero() {
         }`}
       >
         {/* decorative margin doodles */}
-        <svg
+        <img
           aria-hidden="true"
-          className="float-slow absolute right-6 top-14 hidden h-16 w-16 text-red md:block"
-          style={{ "--float-rot": "12deg" } as CSSProperties}
-          viewBox="0 0 60 60"
-          fill="none"
-        >
-          <path
-            className="draw-path"
-            d="M30 6 L36 24 L54 24 L40 35 L46 53 L30 42 L14 53 L20 35 L6 24 L24 24 Z"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinejoin="round"
-          />
-        </svg>
+          alt=""
+          src={carSketch}
+          className="float-slow absolute right-4 top-12 hidden w-44 md:block"
+          style={{ "--float-rot": "8deg" } as CSSProperties}
+        />
         <svg
           aria-hidden="true"
           className="absolute bottom-24 right-16 hidden h-24 w-32 text-navy lg:block"
@@ -140,7 +135,7 @@ export function Hero() {
 
         {/* margin note, like a scribble in a notebook */}
         <div
-          className="reveal relative mt-16 inline-block max-w-xs rotate-[-1.5deg] bg-highlight px-5 py-3 shadow-paper-sm lg:absolute lg:bottom-20 lg:right-8 lg:mt-0"
+          className="reveal relative mt-16 inline-block max-w-sm rotate-[-1.5deg] bg-highlight px-5 py-3 shadow-paper-sm lg:absolute lg:bottom-20 lg:right-8 lg:mt-0"
           style={
             {
               "--reveal-delay": "0.7s",
@@ -149,10 +144,13 @@ export function Hero() {
           }
         >
           <Tape className="-top-3 left-1/2 -translate-x-1/2" rotate={3} />
-          <p className="text-sm italic leading-snug">
-            note to self: currently in third year @ Waikato, open to
-            opportunities&nbsp;→
-          </p>
+          <img
+            src={profilePhoto}
+            alt="Me at the waterfront at sunrise, Red Bull in hand"
+            width={720}
+            height={960}
+            className="w-56 border-2 border-ink/80 object-cover sm:w-64"
+          />
         </div>
       </div>
     </section>

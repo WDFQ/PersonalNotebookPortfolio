@@ -3,15 +3,10 @@ import { Reveal } from './Reveal'
 import { SectionHeading } from './SectionHeading'
 import { Tape } from './Tape'
 
-/*
-  PLACEHOLDER IMAGES: these SVG mockups (src/assets/placeholders/) are
-  stand-ins generated for layout purposes. Swap each one for a real
-  screenshot of the project when available.
-*/
-import revdexShot from '../assets/placeholders/revdex.svg'
-import testpilotShot from '../assets/placeholders/testpilot.svg'
-import suppsenseShot from '../assets/placeholders/suppsense.svg'
-import subnetShot from '../assets/placeholders/subnet.svg'
+import revdexShot from '../assets/placeholders/revdex.png'
+import testpilotShot from '../assets/placeholders/testpilot.png'
+import suppsenseShot from '../assets/placeholders/suppsense.png'
+import subnetShot from '../assets/placeholders/remote_subnet.jpeg'
 
 const screenshots = {
   revdex: revdexShot,
@@ -40,14 +35,18 @@ export function Projects() {
                 <article className="group relative flex h-full flex-col border-2 border-ink bg-card p-4 pb-6 shadow-paper transition-all duration-300 hover:-translate-y-1.5 hover:rotate-0 hover:shadow-paper-lg">
                   <Tape className="-top-3.5 left-1/2 -translate-x-1/2" rotate={i % 2 === 0 ? -3 : 4} />
 
-                  <div className="overflow-hidden border-2 border-ink/80 bg-paper-mid">
+                  <div className="overflow-hidden border-2 border-ink/80 bg-white">
                     <img
                       src={screenshots[project.image]}
                       alt={project.imageAlt}
                       width={800}
                       height={500}
                       loading="lazy"
-                      className="block aspect-[8/5] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      className={`block aspect-[8/5] w-full transition-transform duration-500 group-hover:scale-[1.03] ${
+                        project.image === 'revdex'
+                          ? 'object-contain'
+                          : 'object-cover'
+                      }`}
                     />
                   </div>
 
@@ -86,8 +85,7 @@ export function Projects() {
 
         <Reveal index={2}>
           <p className="mt-12 text-center italic text-pencil">
-            ✎ screenshots above are placeholder sketches — real ones coming
-            soon. More on{' '}
+            ✎ More on{' '}
             <a
               href={profile.github}
               target="_blank"

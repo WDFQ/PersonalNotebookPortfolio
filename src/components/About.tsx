@@ -45,7 +45,7 @@ export function About() {
             </h4>
             <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm">
               {education.coursework.map((course) => (
-                <li key={course} className="before:mr-1 before:text-red before:content-['✓']">
+                <li key={course} className="before:mr-1 before:text-red before:content-['•']">
                   {course}
                 </li>
               ))}
