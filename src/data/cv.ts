@@ -11,7 +11,7 @@ export const profile = {
   // Cycled by the hero typewriter — all roles are taken verbatim from the CV.
   roles: [
     "SE Student @ UoW",
-    "Ex Intern @ MEA Mobile",
+    "Interned @ MEA Mobile",
     "UoW CS Lab Assistant",
     "WCSM Music Tutor",
   ],
