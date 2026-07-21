@@ -121,7 +121,7 @@ export function Contact() {
           >
             <Tape className="-top-3.5 left-10" rotate={-5} />
             <p className="text-2xl font-bold italic leading-snug text-ink">
-              “工欲善其事，必先利其 ---- A craftsman who wants to do his work
+              “工欲善其事，必先利其器 --- A craftsman who wants to do his work
               well must first sharpen his tools.”
             </p>
             <p className="mt-4 text-right text-sm text-pencil">
